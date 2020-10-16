@@ -77,21 +77,26 @@ questions = [
             },
             {
                 'key': 'f',
+                'name': '17:00 - 18:15',
+                'value': '17:00 - 18:15'
+            },
+            {
+                'key': 'g',
                 'name': '17:30 - 18:45',
                 'value': '17:30 - 18:45'
             },
             {
-                'key': 'g',
+                'key': 'h',
                 'name': '19:00 - 20:15',
                 'value': '19:00 - 20:15'
             },
             {
-                'key': 'h',
+                'key': 'i',
                 'name': '20:30 - 21:45',
                 'value': '20:30 - 21:45'
             },
             {
-                'key': 'i',
+                'key': 'k',
                 'name': '22:00 - 23:15',
                 'value': '22:00 - 23:15'
             }
@@ -100,7 +105,6 @@ questions = [
 ]
 
 answers = prompt(questions)
-print(answers)
 
 requestSession = bookClass.create_request_session()
 bookClass.login(requestSession, answers['email_address'], answers['password'])
